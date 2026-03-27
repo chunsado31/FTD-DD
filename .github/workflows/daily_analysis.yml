@@ -1,0 +1,40 @@
+name: NASDAQ DD/FTD Daily Analysis
+
+on:
+  # 매일 UTC 00:00 (= KST 09:00) 평일만 실행
+  schedule:
+    - cron: '0 0 * * 1-5'
+  # 수동 실행 버튼도 추가
+  workflow_dispatch:
+
+jobs:
+  analyze:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Install dependencies
+        run: pip install -r requirements.txt
+
+      - name: Run analysis
+        env:
+          TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
+          TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
+        run: python main.py
+
+      - name: Save market state
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          if [ -f market_state.json ]; then
+            git add market_state.json
+            git diff --cached --quiet || git commit -m "Update market state [skip ci]"
+            git push
+          fi
