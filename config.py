@@ -9,7 +9,7 @@ TELEGRAM_CHAT_ID = os.environ.get("TELEGRAM_CHAT_ID", "")
 YAHOO_CHART_URL = "https://query1.finance.yahoo.com/v8/finance/chart/%5EIXIC"
 
 # 분산일 판정 기준값
-DISTRIBUTION_DROP_THRESHOLD = 0.002       # 0.2% 하락
+DISTRIBUTION_DROP_THRESHOLD = 0.005       # 0.5% 하락
 STALLING_MINOR_DROP = 0.002               # 0.2% 미만 하락 (스톨링 상한)
 STALLING_MICRO_RISE = 0.001               # 0.1% 미세 상승 한계
 NARROW_RANGE_DROP = 0.001                 # 0.1% 이내 미세 하락

@@ -163,7 +163,7 @@ def analyze_distribution_day(today, yesterday, state):
         if not narrow_range:
             result["is_distribution"] = True
             result["distribution_type"] = "standard"
-            result["details"].append("🔴 기본 분산일: 종가 0.2%+ 하락 & 거래량 증가")
+            result["details"].append("🔴 기본 분산일: 종가 0.5%+ 하락 & 거래량 증가")
             return result
 
     # ── 2. 숨겨진 분산일 (Stalling / Churning) ──
