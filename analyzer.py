@@ -368,9 +368,9 @@ def generate_report(today, yesterday, dd_result, ftd_result, state, expired_dds,
     }
 
     lines = []
-    lines.append("━━━━━━━━━━━━━━━━━━━━")
+    lines.append("------------------------------")
     lines.append("📊 나스닥 FTD/DD 일일 분석")
-    lines.append("━━━━━━━━━━━━━━━━━━━━")
+    lines.append("------------------------------")
     lines.append("")
 
     # 시세 요약
@@ -429,6 +429,6 @@ def generate_report(today, yesterday, dd_result, ftd_result, state, expired_dds,
     if state["rally_attempt_start"]:
         lines.append(f"  반등 시도 시작: {state['rally_attempt_start']} ({state['rally_day_count']}일차)")
     lines.append("")
-    lines.append("━━━━━━━━━━━━━━━━━━━━")
+    lines.append("------------------------------")
 
     return "\n".join(lines)
