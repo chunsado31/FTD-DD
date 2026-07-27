@@ -7,8 +7,8 @@
       "close": 25587.04
     }
   ],
-  "rally_attempt_start": "2026-06-26",
-  "rally_attempt_low": 25014.96,
-  "rally_day_count": 19,
-  "last_analyzed_date": "2026-07-23"
+  "rally_attempt_start": null,
+  "rally_attempt_low": null,
+  "rally_day_count": 0,
+  "last_analyzed_date": "2026-07-24"
 }
