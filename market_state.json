@@ -1,8 +1,14 @@
 {
   "market_status": "downtrend",
-  "distribution_days": [],
+  "distribution_days": [
+    {
+      "date": "2026-08-28",
+      "type": "standard",
+      "close": 26402.42
+    }
+  ],
   "rally_attempt_start": "2026-07-30",
   "rally_attempt_low": 24425.34,
-  "rally_day_count": 21,
-  "last_analyzed_date": "2026-08-27"
+  "rally_day_count": 22,
+  "last_analyzed_date": "2026-08-28"
 }
