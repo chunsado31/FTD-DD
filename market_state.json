@@ -25,10 +25,15 @@
       "date": "2026-10-22",
       "type": "standard",
       "close": 26008.86
+    },
+    {
+      "date": "2026-10-30",
+      "type": "standard",
+      "close": 25437.0
     }
   ],
   "rally_attempt_start": "2026-07-30",
   "rally_attempt_low": 24425.34,
-  "rally_day_count": 65,
-  "last_analyzed_date": "2026-10-29"
+  "rally_day_count": 66,
+  "last_analyzed_date": "2026-10-30"
 }
