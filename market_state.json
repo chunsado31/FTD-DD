@@ -1,44 +1,8 @@
 {
-  "market_status": "downtrend",
-  "distribution_days": [
-    {
-      "date": "2026-10-08",
-      "type": "standard",
-      "close": 27193.34
-    },
-    {
-      "date": "2026-10-14",
-      "type": "standard",
-      "close": 26692.87
-    },
-    {
-      "date": "2026-10-15",
-      "type": "stalling",
-      "close": 26713.03
-    },
-    {
-      "date": "2026-10-22",
-      "type": "standard",
-      "close": 26008.86
-    },
-    {
-      "date": "2026-10-30",
-      "type": "standard",
-      "close": 25437.0
-    },
-    {
-      "date": "2026-11-02",
-      "type": "standard",
-      "close": 25164.31
-    },
-    {
-      "date": "2026-11-05",
-      "type": "standard",
-      "close": 24315.0
-    }
-  ],
-  "rally_attempt_start": "2026-11-06",
-  "rally_attempt_low": 24262.14,
-  "rally_day_count": 3,
-  "last_analyzed_date": "2026-11-10"
+  "market_status": "confirmed_uptrend",
+  "distribution_days": [],
+  "rally_attempt_start": null,
+  "rally_attempt_low": null,
+  "rally_day_count": 0,
+  "last_analyzed_date": "2026-11-11"
 }
