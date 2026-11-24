@@ -15,15 +15,10 @@
       "date": "2026-11-19",
       "type": "standard",
       "close": 23879.2
-    },
-    {
-      "date": "2026-11-20",
-      "type": "standard",
-      "close": 22617.73
     }
   ],
   "rally_attempt_start": null,
   "rally_attempt_low": null,
   "rally_day_count": 0,
-  "last_analyzed_date": "2026-11-20"
+  "last_analyzed_date": "2026-11-23"
 }
